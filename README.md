@@ -1,1 +1,1 @@
-# Quantum-projects-testTask
+# internet-shop-logo

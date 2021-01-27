@@ -1,0 +1,43 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+};
+
+@import "fonts";
+@import "reset";
+
+//Primary font
+$fontFamily700: "Museo700";
+$fontFamily700: "Museo900";
+$fontFamily700: "Museo500";
+$primaryFont: "Montserrat";
+
+body {
+    font-family: $primaryFont;
+    color: #4F4F4F;
+    font-size: 18px;
+    overflow-x:hidden;
+}
+
+@media (min-width: 1280px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__list li a {
+    font-family: $fontFamily700;
+    font-size: 15px;
+    line-height: 16px;
+    color: #333333;
+}

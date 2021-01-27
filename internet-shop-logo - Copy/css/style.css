@@ -122,19 +122,6 @@ body {
   overflow-x: hidden;
 }
 
-.menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu__list li a {
-  font-family: "Museo500";
-  font-size: 15px;
-  line-height: 16px;
-  color: #333333;
-}
-
 @media (min-width: 1280px) {
   .container {
     max-width: 1200px;
