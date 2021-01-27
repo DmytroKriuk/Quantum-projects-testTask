@@ -14,8 +14,8 @@
 
 //Primary font
 $fontFamily700: "Museo700";
-$fontFamily700: "Museo900";
-$fontFamily700: "Museo500";
+$fontFamily900: "Museo900";
+$fontFamily500: "Museo500";
 $primaryFont: "Montserrat";
 
 body {
@@ -31,13 +31,192 @@ body {
     }
 }
 
-.menu__list {
-    display: flex;
+.header {
+
+    &__nav {
+        padding: 32px 0px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        li a {
+            font-family: $fontFamily700;
+            font-size: 15px;
+            color: #333333;
+            &:hover {
+                cursor: pointer;
+                color: #7181FC;
+            }
+        } 
+    }
+
+    &__btn-group {
+
+    }
 }
 
-.menu__list li a {
-    font-family: $fontFamily700;
-    font-size: 15px;
-    line-height: 16px;
+.btn-lang {
+    
+    
+    &__title {
+        border: 1px solid black;
+        border-radius: 60px;
+        padding: 12px 14px;
+        color: #333333;
+        &::after {
+            content: "";
+            width: 9.2px;
+            transition: all 0.3s ease 0s;
+            height: 5.2px;
+            background: url('../img/header/arrow.svg') 0 0 no-repeat;
+            margin-left: 13px;
+        }
+        &.show {
+            &::after {
+                transform: rotate((-180deg));
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    min-width: 4.5rem;
+}
+
+
+#dropdownMenuLink {
+    background: #FFFFFF;
     color: #333333;
 }
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $fontFamily700;
+    font-size: 15px;
+    border-radius: 60px;
+    background: #6248FF;
+    color: #ffffff;
+}
+
+.btn-sign {
+    &__button {
+        padding: 13px 24px;
+        font-size: 14px;
+        &:hover {
+            color: #ffffff;
+            background-color: #7181FC;
+        }
+    }
+}
+
+// Header content
+h1 {
+    font-family: $fontFamily700;
+    font-size: 63px;
+    color: #333333;
+}
+
+.header-content {
+    padding-top: 100px;
+    background: url(../img/header/background.png);
+    &__container {
+        padding-top: 40px;
+    }
+}
+
+.header-container {
+    &__title {
+        margin-bottom: 32px;
+    }
+    &__subtitle {
+        letter-spacing: 0.07em;
+        line-height: 30px;
+        margin-bottom: 48px;
+    }
+
+    &__btn {
+        padding: 15px 84px;
+        margin-bottom: 182px;
+        &:hover {
+            color: #ffffff;
+            background-color: #7181FC;
+        }
+    }
+}
+
+// Start section
+
+h2 {
+    font-family: $fontFamily700;
+    font-size: 56px;
+    span {
+        background-color: #EFEDFF;
+    }
+}
+
+.start {
+    padding-bottom: 140px;
+    &__title {
+        padding-top: 141px;
+        padding-bottom: 60px;
+    }
+
+    &__container {
+        
+    }
+}
+
+.map-step {
+    padding: 32px;
+    border: 2px solid #6248FF;
+    border-radius: 30px;
+    &__num {
+        font-family: $fontFamily700;
+        font-size: 15px;
+        color: #6248FF;
+        padding-bottom: 8px;
+    }
+
+    &__title {
+        font-family: $fontFamily700;
+        font-size: 24px;
+        color: #333333;
+        padding-bottom: 24px;
+    }
+
+    &__subtitle {
+        line-height: 30px;
+    }
+    &_second {
+        margin-top: -40px;
+    }
+    
+}
+
+.border-class-1 {
+    margin-top: -109px;
+    margin-left: 488px;
+    margin-right: 0px;
+    width: 465px;
+    height: 70px;
+    border-top: 3px dashed #6248FF;
+    border-right: 3px dashed #6248FF;
+    border-top-right-radius: 35px;
+}
+
+.border-class-2 {
+    margin-right: 486px;
+    margin-top: -110px;
+    width: 465px;
+    height: 70px;
+    border-top: 3px dashed #6248FF;
+    border-left: 3px dashed #6248FF;
+    border-top-left-radius: 35px;
+}
+
+// Section people
+

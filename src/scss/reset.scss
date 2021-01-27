@@ -26,3 +26,7 @@ body {
 ul, li {
     list-style: none;
 }
+
+.btn:focus {
+    box-shadow: none;
+}
