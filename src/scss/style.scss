@@ -11,6 +11,7 @@
 
 @import "fonts";
 @import "reset";
+@import "swiper";
 
 //Primary font
 $fontFamily700: "Museo700";
@@ -153,6 +154,7 @@ h1 {
 h2 {
     font-family: $fontFamily700;
     font-size: 56px;
+    line-height: 66px;
     span {
         background-color: #EFEDFF;
     }
@@ -220,3 +222,94 @@ h2 {
 
 // Section people
 
+  .people-slider {
+    margin-bottom: 140px;
+    &__wrapper {
+        display: flex;
+
+    }
+
+    
+    &__header {
+        position: relative;
+    }
+
+    
+    &__title {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    &__control {
+        display: flex;
+        align-items: center;
+        width: 112px;
+        justify-content: space-between;
+    }
+
+    
+    &__item {
+        
+    }
+
+
+    &__content {
+        padding-top: 10px;
+    }
+
+
+    &__slide {
+      font-size: 24px;
+      padding-left: 100px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../img/quote.svg) 0 0 no-repeat;
+            color: #6248FF;
+            top: 100px;
+            left: 50px;
+            right: 0px;
+            width: 35px;
+            height: 32px;
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        padding-bottom: 17px;
+    }
+
+    &__container {
+        text-align: left;
+        padding-left: 30px;
+        &_title {
+            font-family: $fontFamily700;
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        &_subtitle {
+            font-size: 16px;
+        }
+    }
+
+    &__quote {
+        font-family: $fontFamily700;
+        line-height: 29px;
+        text-align: left;
+       
+    }
+
+    &__info {
+        margin-top: 30px;
+        font-family: $fontFamily700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #6248FF;
+        text-decoration: underline;
+    }
+  }
+
+  
