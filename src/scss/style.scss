@@ -9,9 +9,19 @@
     }
 };
 
+
 @import "fonts";
 @import "reset";
 @import "swiper";
+@import "accordion";
+
+@mixin MuseoSubtitle {
+    font-family: $fontFamily700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
 
 //Primary font
 $fontFamily700: "Museo700";
@@ -19,10 +29,18 @@ $fontFamily900: "Museo900";
 $fontFamily500: "Museo500";
 $primaryFont: "Montserrat";
 
+@mixin MuseoSubtitle {
+    font-family: $fontFamily700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
 body {
     font-family: $primaryFont;
     color: #4F4F4F;
     font-size: 18px;
+    line-height: 27px;
     overflow-x:hidden;
 }
 
@@ -184,9 +202,7 @@ h2 {
     }
 
     &__title {
-        font-family: $fontFamily700;
-        font-size: 24px;
-        color: #333333;
+        @include MuseoSubtitle;
         padding-bottom: 24px;
     }
 
@@ -312,4 +328,47 @@ h2 {
     }
   }
 
-  
+// Section question
+
+.questions {
+    margin-bottom: 124px;
+    &__title {
+        padding-bottom: 60px;
+    }
+
+    &__section {
+        padding: 40px 32px;
+        border: 2px solid #6248FF;
+        border-radius: 20px;
+        margin-bottom: 16px;
+    }
+}
+
+.question-section {
+
+    &__question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        @include MuseoSubtitle;
+    }
+
+    &__item {
+        background: url(../img/plus.svg) center no-repeat;
+        width: 18px;
+        height: 18px;
+        transition: all 0.3s ease;
+        &._active {
+                transform: rotate((-45deg));
+        }
+    }
+
+    &__answer {
+        font-family: $primaryFont;
+        font-size: 16px;
+        line-height: 27px;
+    }
+}

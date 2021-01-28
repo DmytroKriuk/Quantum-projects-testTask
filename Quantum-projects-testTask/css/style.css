@@ -207,10 +207,58 @@ element.style {
           box-sizing: content-box;
 }
 
+.accordion-button::after {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  content: "";
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  -o-transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/plus.svg);
+}
+
+.accordion-button {
+  outline: none;
+  border: 0;
+  padding: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #ffffff;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #ffffff;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-collapse {
+  border: 0;
+}
+
+.accordion-body {
+  padding: 25px 0px 0px 0px;
+}
+
 body {
   font-family: "Montserrat";
   color: #4F4F4F;
   font-size: 18px;
+  line-height: 27px;
   overflow-x: hidden;
 }
 
@@ -370,6 +418,7 @@ h2 span {
 .map-step__title {
   font-family: "Museo700";
   font-size: 24px;
+  line-height: 29px;
   color: #333333;
   padding-bottom: 24px;
 }
@@ -495,6 +544,61 @@ h2 span {
   line-height: 18px;
   color: #6248FF;
   text-decoration: underline;
+}
+
+.questions {
+  margin-bottom: 124px;
+}
+
+.questions__title {
+  padding-bottom: 60px;
+}
+
+.questions__section {
+  padding: 40px 32px;
+  border: 2px solid #6248FF;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.question-section__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question-section__title {
+  font-family: "Museo700";
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+
+.question-section__item {
+  background: url(../img/plus.svg) center no-repeat;
+  width: 18px;
+  height: 18px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.question-section__item._active {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.question-section__answer {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 27px;
 }
 
 @media (min-width: 1280px) {
