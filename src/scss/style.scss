@@ -40,7 +40,6 @@ body {
     font-family: $primaryFont;
     color: #4F4F4F;
     font-size: 18px;
-    line-height: 27px;
     overflow-x:hidden;
 }
 
@@ -119,16 +118,16 @@ body {
     border-radius: 60px;
     background: #6248FF;
     color: #ffffff;
+    &:hover {
+        color: #ffffff;
+        background-color: #7181FC;
+    }
 }
 
 .btn-sign {
     &__button {
         padding: 13px 24px;
         font-size: 14px;
-        &:hover {
-            color: #ffffff;
-            background-color: #7181FC;
-        }
     }
 }
 
@@ -371,4 +370,125 @@ h2 {
         font-size: 16px;
         line-height: 27px;
     }
+}
+// Contact
+.contact {
+    background: url(../img/header/background.png);
+    padding-top: 120px;
+    padding-bottom: 134px;
+    &__container {
+
+    }
+
+    &__form {
+        padding: 118px 80px;
+        border: 2px solid #6248FF;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__field {
+        width: 100%;
+        margin-bottom: 24px;
+        input {
+            font-size: 16px;
+            outline: none;
+            display: block;
+            width: 100%;
+            border-radius: 8px;
+            color: #828282;
+            border: 1px solid #E0E0E0;
+            padding: 7px 16px;
+        }
+    }
+
+    &__error {
+        font-family: $fontFamily700;
+	color: #EB5757;
+	text-align: left;
+	display: block;
+    display: none;
+    font-size: 15px;
+    line-height: 16px;
+    }
+
+    &__button {
+        padding: 15px 67px;
+    }
+}
+
+.content-contact {
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 48px;
+    }
+
+    &__owned{
+        font-size: 15.9px;
+        line-height: 27px;
+        margin-bottom: 24px;
+    }
+
+    &__container {
+        
+        &_phone {
+            padding-bottom: 16px;
+        }
+
+        &_mail {
+            padding-bottom: 16px;
+        }
+
+        &_address {
+
+        }
+    }
+}
+
+.contact-form {
+
+    &__title {
+        font-family: $fontFamily700;
+        font-size: 15px;
+        color: #333333;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 27px;
+        color: #4F4F4F;
+    }
+
+}
+
+
+.form__error {
+    
+}
+
+
+
+input:focus {
+    border-color:#828282;
+    color: #4F4F4F;
+}
+
+input:valid:not(:placeholder-shown) {
+	border-color: #0EAC00;
+}
+
+input:invalid:not(:placeholder-shown) {
+	border-color: #EB5757;
+}
+input:invalid:not(:placeholder-shown) + .contact__error {
+	display: block;
 }
