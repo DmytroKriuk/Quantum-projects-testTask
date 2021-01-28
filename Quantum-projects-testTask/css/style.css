@@ -523,7 +523,6 @@ h2 span {
 
 .people-slider__container_title {
   font-family: "Museo700";
-  font-size: 18px;
   line-height: 30px;
 }
 
@@ -661,7 +660,6 @@ h2 span {
 }
 
 .content-contact__subtitle {
-  font-size: 18px;
   line-height: 30px;
   margin-bottom: 48px;
 }
@@ -731,6 +729,44 @@ input:invalid:not(:-ms-input-placeholder) + .contact__error {
 
 input:invalid:not(:placeholder-shown) + .contact__error {
   display: block;
+}
+
+.footer {
+  padding-top: 32px;
+}
+
+.footer__title {
+  font-family: "Museo700";
+  line-height: 30px;
+  padding-bottom: 16px;
+}
+
+.footer__subtitle {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.footer__list li {
+  margin-bottom: 24px;
+  padding-left: 66px;
+}
+
+.footer__list li a {
+  font-family: "Museo700";
+  font-size: 15px;
+  color: #333333;
+}
+
+.footer__list li a:hover {
+  cursor: pointer;
+  color: #7181FC;
+}
+
+.footer__bottom {
+  padding-top: 48px;
+  font-size: 16px;
+  line-height: 27px;
+  color: #828282;
 }
 
 @media (min-width: 1280px) {

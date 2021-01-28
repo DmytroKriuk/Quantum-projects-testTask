@@ -22,7 +22,15 @@
     color: #333333;
 }
 
+@mixin listItem{
+    font-family: $fontFamily700;
+    font-size: 15px;
+    color: #333333;
+}
 
+h5 {
+    
+}
 //Primary font
 $fontFamily700: "Museo700";
 $fontFamily900: "Museo900";
@@ -59,9 +67,7 @@ body {
         display: flex;
         justify-content: space-between;
         li a {
-            font-family: $fontFamily700;
-            font-size: 15px;
-            color: #333333;
+            @include listItem;
             &:hover {
                 cursor: pointer;
                 color: #7181FC;
@@ -301,7 +307,6 @@ h2 {
         padding-left: 30px;
         &_title {
             font-family: $fontFamily700;
-            font-size: 18px;
             line-height: 30px;
         }
 
@@ -427,7 +432,6 @@ h2 {
     }
 
     &__subtitle {
-        font-size: 18px;
         line-height: 30px;
         margin-bottom: 48px;
     }
@@ -470,13 +474,6 @@ h2 {
 
 }
 
-
-.form__error {
-    
-}
-
-
-
 input:focus {
     border-color:#828282;
     color: #4F4F4F;
@@ -491,4 +488,45 @@ input:invalid:not(:placeholder-shown) {
 }
 input:invalid:not(:placeholder-shown) + .contact__error {
 	display: block;
+}
+
+//Footer 
+
+.footer { 
+    padding-top: 32px;
+    &__container {
+
+    }
+
+    &__title {
+        font-family: $fontFamily700;
+        line-height: 30px;
+        padding-bottom: 16px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    &__list {
+        li {
+            margin-bottom: 24px;
+            padding-left: 66px;
+        }
+        li a {
+            @include listItem;
+            &:hover {
+                cursor: pointer;
+                color: #7181FC;
+            }
+        } 
+    }
+
+    &__bottom {
+        padding-top: 48px;
+        font-size: 16px;
+        line-height: 27px;
+        color: #828282;
+    }
 }
