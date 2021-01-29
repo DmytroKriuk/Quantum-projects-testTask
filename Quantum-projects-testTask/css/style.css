@@ -255,7 +255,7 @@ body {
 }
 
 .header__nav {
-  padding: 32px 0px;
+  padding: 20px 0px;
 }
 
 .header__list {
@@ -280,7 +280,7 @@ body {
 .btn-lang__title {
   border: 1px solid black;
   border-radius: 60px;
-  padding: 12px 14px;
+  padding: 9px 15px;
   color: #333333;
 }
 
@@ -322,14 +322,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 15px;
   border-radius: 60px;
   background: #6248FF;
   color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .btn-sign__button {
-  padding: 13px 24px;
+  padding: 9px 29px;
   font-size: 14px;
 }
 
@@ -354,6 +355,7 @@ h1 span {
 
 .header-container__title {
   margin-bottom: 32px;
+  line-height: 72px;
 }
 
 .header-container__subtitle {
@@ -364,7 +366,7 @@ h1 span {
 }
 
 .header-container__btn {
-  padding: 15px 84px;
+  padding: 15px 74px;
 }
 
 .header-container__btn:hover {
@@ -382,7 +384,7 @@ h2 span {
 }
 
 .start {
-  padding-bottom: 140px;
+  padding-bottom: 115px;
 }
 
 .start__title {
@@ -440,7 +442,7 @@ h2 span {
 }
 
 .people-slider {
-  margin-bottom: 140px;
+  margin-bottom: 125px;
 }
 
 .people-slider__wrapper {
@@ -455,7 +457,7 @@ h2 span {
 
 .people-slider__title {
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .people-slider__control {
@@ -603,7 +605,8 @@ h2 span {
 }
 
 .contact__form {
-  padding: 130px 80px;
+  background-color: white;
+  padding: 90px 80px;
   border: 2px solid #6248FF;
   border-radius: 20px;
   display: -webkit-box;
@@ -627,6 +630,7 @@ h2 span {
 }
 
 .contact__field input {
+  background-color: white;
   font-family: "Montserrat";
   font-size: 16px;
   outline: none;
@@ -634,8 +638,12 @@ h2 span {
   width: 100%;
   border-radius: 8px;
   color: #828282;
-  border: 1px solid #E0E0E0;
-  padding: 7px 16px;
+  border: 2px solid #E0E0E0;
+  padding: 7px 76px 16px 16px;
+}
+
+.contact__field input[placeholder="Message"] {
+  padding-bottom: 89px;
 }
 
 .contact__error {
@@ -852,7 +860,7 @@ input:invalid:not(:placeholder-shown) + .contact__error {
   }
 
   .contact__form {
-    padding: 160px  80px;
+    padding: 110px  80px;
   }
 }
 
@@ -1113,7 +1121,7 @@ input:invalid:not(:placeholder-shown) + .contact__error {
   }
 
   .contact__form {
-    padding: 48px 16px;
+    padding: 20px 16px;
   }
 
   .footer__image {
