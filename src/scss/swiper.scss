@@ -10,11 +10,26 @@
 }
 
 ._arrow_next {
+    &_quote {
+        display: none;
+        @media (max-width:992px) {
+            display: block;
+            padding: 20px;
+            transform: rotate(-90deg);
+        }
+    }
     transform: rotate(-90deg);
 }
 
 ._arrow_prev {
-    
+    &_quote {
+        display: none;
+        @media (max-width:992px) {
+            display: block;
+            padding: 20px;
+            transform: rotate(90deg);
+        }
+    }
     transform: rotate(90deg);
 }
 
