@@ -1,9 +1,9 @@
 <template>
     <div class="wrapperTest">
-        <section class="start">
+            <section class="start">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5 col-lg-6 col-md-7 start__title">
+                <div class="col-md-6 col-sm-8 col-10 start__title">
                     <h2>Getting Started Is <span>Fast & Easy</span></h2>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-    </section>
+            </section>
     </div>
 </template>
 

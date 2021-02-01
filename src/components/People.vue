@@ -21,7 +21,7 @@
                                 <div class="people-slider__slide swiper-slide">
                                     <div class="people-slider__content">
                                         <div class="people-slider__author">
-                                            <picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.png" alt="Author"></picture>
+                                            <img src="img/author.png" alt="Author">
                                             <div class="people-slider__container">
                                                 <div class="people-slider__container_title">Albert Abello</div>
                                                 <div class="people-slider__container_subtitle">Director of Growth</div>
@@ -35,7 +35,7 @@
                                 <div class="people-slider__slide swiper-slide">
                                     <div class="people-slider__content">
                                         <div class="people-slider__author">
-                                            <picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.png" alt="Author"></picture>
+                                            <img src="img/author.png" alt="Author">
                                             <div class="people-slider__container">
                                                 <div class="people-slider__container_title">Albert Abello</div>
                                                 <div class="people-slider__container_subtitle">Director of Growth</div>
@@ -49,7 +49,7 @@
                                 <div class="people-slider__slide swiper-slide">
                                     <div class="people-slider__content">
                                         <div class="people-slider__author">
-                                            <picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.png" alt="Author"></picture>
+                                            <img src="img/author.png" alt="Author">
                                             <div class="people-slider__container">
                                                 <div class="people-slider__container_title">Albert Abello</div>
                                                 <div class="people-slider__container_subtitle">Director of Growth</div>
@@ -63,7 +63,7 @@
                                 <div class="people-slider__slide swiper-slide">
                                     <div class="people-slider__content">
                                         <div class="people-slider__author">
-                                            <picture><source srcset="img/author.webp" type="image/webp"><img src="img/author.png" alt="Author"></picture>
+                                            <img src="img/author.png" alt="Author">
                                             <div class="people-slider__container">
                                                 <div class="people-slider__container_title">Albert Abello</div>
                                                 <div class="people-slider__container_subtitle">Director of Growth</div>
@@ -78,12 +78,13 @@
                         </div>
                         <div class="people-slider__arrow people-slider__arrow_next _arrow _arrow_next_quote  swiper-button-next"></div>
                         </div>
+                        
                     </div>
                     <div class="people-slider__info offset-6 col-2"></div>
                 </div>
             </div>
         </div>
-    </section>
+        </section>
     </div>
 </template>
 
