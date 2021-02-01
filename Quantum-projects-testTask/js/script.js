@@ -41,9 +41,13 @@ if (document.querySelector('.people-slider')) {
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
+const body = document.querySelector("body")
+console.log(body)
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
+  hamburger.classList.toggle("active");
+  body.classList.toggle("lock");
   links.forEach(link => {
     link.classList.toggle("fade");
   });

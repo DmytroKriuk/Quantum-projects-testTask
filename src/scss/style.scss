@@ -42,6 +42,9 @@ body {
     color: #4F4F4F;
     font-size: 18px;
     overflow-x:hidden;
+    &.lock {
+        overflow: hidden;
+    }
 }
 
 @media (min-width: 1280px) {
@@ -54,6 +57,9 @@ body {
 
     &__nav {
         padding: 20px 0px;
+        @media (max-width:572px){
+            padding: 50px 0px;            
+        }
     }
 
     &__list {
@@ -70,6 +76,12 @@ body {
 
     &__btn-group {
 
+    }
+
+    &__image {
+        @media (max-width:992px) {
+            transform: scale(0.75);  
+        }
     }
 }
 
@@ -131,7 +143,7 @@ body {
 
 .btn-sign {
     &__button {
-        padding: 9px 29px;
+        padding: 9px 21px;
         font-size: 14px;
     }
 }
@@ -254,7 +266,7 @@ h2 {
 
 .border-class-1 {
     margin-top: -109px;
-    margin-left: 497px;
+    margin-left: 490px;
     margin-right: 0px;
     width: 465px;
     height: 70px;
@@ -275,7 +287,7 @@ h2 {
 }
 
 .border-class-2 {
-    margin-right: 497px;
+    margin-right: 490px;
     margin-top: -110px;
     width: 465px;
     height: 70px;
@@ -364,11 +376,26 @@ h2 {
               left: 300px;
               width: 35px;
               height: 32px;
-        }
+          }
+          @media (max-width:768px) {
+            top: 161px;    
+            left: 200px;
+            width: 35px;
+            height: 32px;
+          }
+          @media (max-width:576px) {
+            top: 161px;   
+            width: 35px;
+            height: 32px;
+            left: 46%;
+          }
       }
       @media (max-width:992px) {
             padding: 0px 40px;
-        }
+      }
+      @media (max-width:576px) {
+        padding: 0px 5px;
+  }
     }
 
     &__author {
@@ -391,6 +418,9 @@ h2 {
         &_subtitle {
             font-family: $primaryFont;
             font-size: 16px;
+        }
+        @media (max-width: 576px) {
+            padding: 0;
         }
         
     }
@@ -462,6 +492,8 @@ h2 {
         line-height: 27px;
     }
 }
+
+
 // Contact
 .contact {
     background: url(../img/header/background.png);
@@ -638,6 +670,10 @@ input:invalid:not(:placeholder-shown) + .contact__error {
             padding-left: 66px;
             @media (max-width:992px) {
                padding: 0px;
+               margin-bottom: 40px;
+            }
+            @media (max-width:768px) {
+                margin-bottom: 32px;
             }
             
         }
@@ -691,12 +727,9 @@ input:invalid:not(:placeholder-shown) + .contact__error {
         padding-top: 0px;
         padding-bottom: 48px;
     }
-}
-
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    width: 100%; 
-    padding-right: 0; 
-    padding-left: 0; 
+    @media (max-width: 576px) {
+        padding-bottom: 16px;
+    }
 }
 
   //Burger
@@ -739,17 +772,22 @@ input:invalid:not(:placeholder-shown) + .contact__error {
     .nav-links {
       position: fixed;
       background: #5b78c7;
-      height: 100vh;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      top: -20px;
+      left: 0;
+      height: 105vh;
       width: 100%;
       flex-direction: column;
-      clip-path: circle(100px at 90% -10%);
-      -webkit-clip-path: circle(100px at 90% -10%);
+      clip-path: circle(100px at 100% -30%);
+      -webkit-clip-path: circle(100px at 90% -45%);
       transition: all 1s ease-out;
       pointer-events: none;
+      overflow: hidden;
     }
     .nav-links.open {
-      clip-path: circle(1000px at 90% -10%);
-      -webkit-clip-path: circle(1000px at 90% -10%);
+      clip-path: circle(1000px at 90% 20%);
+      -webkit-clip-path: circle(1000px at 90% 20%);
       pointer-events: all;
     }
     .landing {
